@@ -1,0 +1,57 @@
+
+.chat{
+    flex: 0.7;
+    flex-grow: 1;
+    padding-bottom: 200px;
+    height: 400px;
+    max-height: 600px;
+    border-bottom:.1px solid lightgray;
+}
+.chat__messages{
+    
+    flex: 0.7;
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-bottom: 200px;
+    height: 300px;
+    max-height: 500px;
+    border-bottom:.1px solid lightgray;
+}
+.chat__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.chat__channelName{
+    display: flex;
+    text-transform: lowercase;
+    font-size: 20px;
+    align-items: center;
+}
+
+.chat__channelName > .MuiSvgIcon-root{
+    margin-left: 10px;
+    font-size: 18px;
+}
+::-webkit-scrollbar {
+
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--slack-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #683e1c;
+  }
